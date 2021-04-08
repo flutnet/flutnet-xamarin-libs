@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Flutnet.Android</id>
+    <version>2.0.0</version>
+    <title>Flutnet.Android</title>
+    <authors>Novagem Solutions S.r.l.</authors>
+    <owners></owners>
+    <projectUrl>https://www.flutnet.com</projectUrl>
+    <license type="file">LICENSE.md</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Flutnet runtime for Xamarin.Android</description>
+    <releaseNotes>Flutnet is now open source!</releaseNotes>
+    <copyright>Copyright © Novagem Solutions Srl 2020-2021</copyright>
+    <tags>Flutnet Xamarin Android Xamarin.Android</tags>
+    <icon>images\icon.png</icon>
+    <dependencies>
+      <group targetFramework="MonoAndroid">
+        <dependency id="Flutnet.ServiceModel" version="2.0.0" />
+        <dependency id="Flutnet.Interop.Android" version="2.0.0" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Flutnet.dll" target="lib/MonoAndroid/Flutnet.dll" />
+    <file src="bin/Release/Flutnet.xml" target="lib/MonoAndroid/Flutnet.xml" />
+    <file src="bin/Release/websocket-sharp.dll" target="lib/MonoAndroid/websocket-sharp.dll" />
+    <file src="../../LICENSE.md" target="LICENSE.md" />
+    <file src="../../NOTICE.md" target="NOTICE.md" />
+    <file src="../../assets/images/flutnet_logo_128x128_trasp.png" target="images/icon.png" />
+  </files>
+</package>

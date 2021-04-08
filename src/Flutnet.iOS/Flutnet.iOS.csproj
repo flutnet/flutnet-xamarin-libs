@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5D20DDF-DE45-4FE3-80D8-266DF85507D2}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{a52b8a63-bc84-4b47-910d-692533484892}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Flutnet</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Flutnet</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Flutnet.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Flutnet.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Flutnet.Android\Data\FlutnetEventInfo.cs">
+      <Link>Data\FlutnetEventInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\Data\FlutnetMessage.cs">
+      <Link>Data\FlutnetMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\Data\FlutnetMethodInfo.cs">
+      <Link>Data\FlutnetMethodInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\FlutnetBridgeMode.cs">
+      <Link>FlutnetBridgeMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\FlutnetRuntime.cs">
+      <Link>FlutnetRuntime.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\FlutnetWebSocket.cs">
+      <Link>FlutnetWebSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\PlatformOperationRunner.cs">
+      <Link>PlatformOperationRunner.cs</Link>
+    </Compile>
+    <Compile Include="..\Flutnet.Android\Utilities\ExceptionExtensions.cs">
+      <Link>Utilities\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="FlutnetBridge.cs" />
+    <Compile Include="FlutnetWebSocketService.cs" />
+    <Compile Include="FlutterInterop.cs" />
+    <Compile Include="Utilities\JsonConversionExtensions.cs" />
+    <Compile Include="MainThread.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Flutnet.Interop.iOS" Version="2.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Flutnet.ServiceModel\Flutnet.ServiceModel.csproj">
+      <Project>{E652257F-F13C-458B-B6ED-804E1F2E77F5}</Project>
+      <Name>Flutnet.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\websocket-sharp\websocket-sharp.csproj">
+      <Project>{1455A8DF-9203-4F18-AEC8-E09D6160E45F}</Project>
+      <Name>websocket-sharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Flutnet.Shared\Flutnet.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
