@@ -35,7 +35,8 @@ Run the following script in order to build the projects **Flutnet.Android** and 
 scripts/build-src.sh
 ```
 
->NOTE: Visual studio build tool know where to find the nuget packages because the information is indicated inside the `NuGet.Config` file.
+>- If you have some trouble about restoring nuget packages, just open the `Flutnet.sln` in Visual Studio and re-run the script.
+>- Visual studio build tool know where to find the nuget packages because the information is indicated inside the `NuGet.Config` file.
 
 ### Create Nuget packages
 
