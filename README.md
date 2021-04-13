@@ -1,6 +1,6 @@
 # [Flutnet](https://www.flutnet.com) runtime libraries
 
-<img src="github_assets/flutnet_prj_structure_cross_platform_code_200px.jpg" width="35%" style="background-color:white; padding:0px;" />
+<img src="github_assets/flutnet_prj_structure_cross_platform_code_200px.jpg" width="35%" style="background-color:white; padding:0px; margin-bottom:2%" />
 
 This repository provides all the code to build your own nuget packages [Flutnet.iOS](https://www.nuget.org/packages/Flutnet.iOS/) and [Flutnet.Android](https://www.nuget.org/packages/Flutnet.Android/). 
 
@@ -14,20 +14,34 @@ Flutnet is a set of tools and libraries that will make super easy embed Flutter 
 
 In order to build these packages you need to have already builded the [Flutnet Xamarin Bindings Libraries](https://github.com/flutnet/flutnet_xamarin-bindings).
 
+After that ensure to have cloned 
+
+- `flutnet_xamarin-bindings` 
+- `flutnet_xamarin-libs` 
+
+projects in the same parent directory like the image below.
+
+<img src="github_assets/folders.png" width="40%" />
+
 ## Build procedure :hammer:
 
->The following procedure refer to a **macOS system**, because we need a macOS machine in order to build both Android and iOS.
+The following procedure refer to a **macOS system**, because we need a macOS machine in order to build both Android and iOS.
 
 The build process is composed by:
+ - [Restore all NuGet Packages](#restore-all-nuget-packages)
  - [Build the source projects](#build-the-source-projects)
  - [Create Nuget packages](#create-nuget-packages)
  - [Build the Sample](#build-the-sample)
 
+### Restore NuGet Packages
+
+To ensure that all required nuget packages (for the projects) will be restored run the command
+
+```sh
+scripts/restore-nuget-packages.sh
+```
+
 ### Build the source projects
-
-Before building the source code ensure to have already builded the [Flutnet Xamarin Bindings Libraries](https://github.com/flutnet/flutnet_xamarin-bindings). Ensure to clone `flutnet_xamarin-bindings` and `flutnet_xamarin-libs` projects in the same parent directory.
-
-<img src="github_assets/folders.png" width="40%" />
 
 Run the following script in order to build the projects **Flutnet.Android** and **Flutnet.iOS** inside the `Flutnet.sln` solution.
 
@@ -35,8 +49,7 @@ Run the following script in order to build the projects **Flutnet.Android** and 
 scripts/build-src.sh
 ```
 
->- If you have some trouble about restoring nuget packages, just open the `Flutnet.sln` in Visual Studio and re-run the script.
->- Visual studio build tool know where to find the nuget packages because the information is indicated inside the `NuGet.Config` file.
+>Visual studio build tool know where to find the nuget packages because the information is indicated inside the `NuGet.Config` file.
 
 ### Create Nuget packages
 
