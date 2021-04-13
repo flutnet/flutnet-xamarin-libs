@@ -1,10 +1,15 @@
-# [Flutnet](https://www.flutnet.com) runtime libraries
+# Flutnet Runtime libraries
 
-<img src="github_assets/flutnet_prj_structure_cross_platform_code_200px.jpg" width="35%" style="background-color:white; padding:0px; margin-bottom:2%" />
+| Flutnet.Android                                                                                             | Flutnet.iOS                                                                                         |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [![Nuget](https://img.shields.io/nuget/v/Flutnet.Android)](https://www.nuget.org/packages/Flutnet.Android/) | [![Nuget](https://img.shields.io/nuget/v/Flutnet.iOS)](https://www.nuget.org/packages/Flutnet.iOS/) |
+
 
 This repository provides all the code to build your own nuget packages [Flutnet.iOS](https://www.nuget.org/packages/Flutnet.iOS/) and [Flutnet.Android](https://www.nuget.org/packages/Flutnet.Android/). 
 
 This packages contains both the [FlutnetRuntime](https://www.flutnet.com/Documentation/Reference/Flutnet-Runtime) and the [FlutnetBrigde](https://www.flutnet.com/Documentation/Reference/Flutnet-Bridge) used to provide the communication between Flutter and Xamarin in your Xamarin Project (see the [Flutnet Architecture](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture)).
+
+<img src="github_assets/flutnet_prj_structure_cross_platform_code_200px.jpg" width="35%" style="background-color:white; padding:0px; margin-bottom:2%" />
 
 ## What is Flutnet?
 
@@ -83,3 +88,11 @@ At the first time, the build process will require more time because needs to bui
 ### Run the project on a device
 
 You can alwais open the `samples/Flutnet.Samples.sln` in Visual Studio running the project on a real device. If you want to run the project for iOS ensure to setup your apple-ID in Visual Studio.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)

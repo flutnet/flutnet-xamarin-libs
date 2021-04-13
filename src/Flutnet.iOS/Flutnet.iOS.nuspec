@@ -7,7 +7,7 @@
     <authors>Novagem Solutions S.r.l</authors>
     <owners></owners>
     <projectUrl>https://www.flutnet.com</projectUrl>
-    <license type="file">LICENSE.md</license>
+    <license type="expression">LGPL-3.0-or-later</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Flutnet runtime for Xamarin.iOS</description>
     <releaseNotes>Flutnet is now open source!</releaseNotes>
@@ -26,7 +26,6 @@
     <file src="bin/Release/Flutnet.dll" target="lib/Xamarin.iOS10/Flutnet.dll" />
     <file src="bin/Release/Flutnet.xml" target="lib/Xamarin.iOS10/Flutnet.xml" />
     <file src="bin/Release/websocket-sharp.dll" target="lib/Xamarin.iOS10/websocket-sharp.dll" />
-    <file src="../../LICENSE.md" target="LICENSE.md" />
     <file src="../../NOTICE.md" target="NOTICE.md" />
     <file src="../../assets/images/flutnet_logo_128x128_trasp.png" target="images/icon.png" />
   </files>

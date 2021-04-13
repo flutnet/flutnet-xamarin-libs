@@ -7,7 +7,7 @@
     <authors>Novagem Solutions S.r.l</authors>
     <owners></owners>
     <projectUrl>https://www.flutnet.com</projectUrl>
-    <license type="file">LICENSE.md</license>
+    <license type="expression">LGPL-3.0-or-later</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Provides attributes for decorating objects that need to be processed by Flutnet.</description>
     <releaseNotes>Flutnet is now open source!</releaseNotes>
@@ -22,7 +22,6 @@
   <files>
     <file src="bin/Release/netstandard2.0/Flutnet.ServiceModel.dll" target="lib/netstandard2.0/Flutnet.ServiceModel.dll" />
     <file src="bin/Release/netstandard2.0/Flutnet.ServiceModel.xml" target="lib/netstandard2.0/Flutnet.ServiceModel.xml" />
-    <file src="../../LICENSE.md" target="LICENSE.md" />
     <file src="../../NOTICE.md" target="NOTICE.md" />
     <file src="../../assets/images/flutnet_logo_128x128_trasp.png" target="images/icon.png" />
   </files>
