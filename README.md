@@ -9,24 +9,14 @@ This repository provides all the code to build your own nuget packages [Flutnet.
 
 This packages contains both the [FlutnetRuntime](https://www.flutnet.com/Documentation/Reference/Flutnet-Runtime) and the [FlutnetBrigde](https://www.flutnet.com/Documentation/Reference/Flutnet-Bridge) used to provide the communication between Flutter and Xamarin in your Xamarin Project (see the [Flutnet Architecture](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture)).
 
-<img src="github_assets/flutnet_prj_structure_cross_platform_code_200px.jpg" width="35%" style="background-color:white; padding:0px; margin-bottom:2%" />
-
 ## What is Flutnet?
 
-Flutnet is a set of tools and libraries that will make super easy embed Flutter (graphical framework) inside a Xamarin application (as a backend layer) to obtain a powerful and native cross platform application. For more detailts see https://www.flutnet.com/.
+Flutnet is a set of tools and libraries that will make super easy embed [Flutter](https://flutter.dev/) (graphical framework) inside a [Xamarin](https://dotnet.microsoft.com/apps/xamarin) application (as a backend layer) to obtain a powerful and native cross platform application. For more detailts see https://www.flutnet.com/.
 
-## Build requirements
-
-In order to build these packages you need to have already builded the [Flutnet Xamarin Bindings Libraries](https://github.com/flutnet/flutnet_xamarin-bindings).
-
-After that ensure to have cloned 
-
-- `flutnet_xamarin-bindings` 
-- `flutnet_xamarin-libs` 
-
-projects in the same parent directory like the image below.
-
-<img src="github_assets/folders.png" width="40%" />
+<div style="background-color:white; padding:0%; margin-bottom: 3%;">
+<img src="github_assets/how_flutnet_works_r2.png" width="35%" style="background-color:white; padding:1.2%;" />
+<img src="github_assets/flutter_embedding.png" width="17.5%" style="background-color:white; padding:0px;" />
+</div>
 
 ## Build procedure :hammer:
 
@@ -83,11 +73,16 @@ scripts/build-samples.sh
 
 At the first time, the build process will require more time because needs to build the Flutter Module used inside the Xamarin app. Check the [Flutnet Architecture](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture) for more details.
 
->NOTE: Visual studio know where to find the nuget packages because the information is indicated inside the `samples/NuGet.Config` file.
-
 ### Run the project on a device
 
 You can alwais open the `samples/Flutnet.Samples.sln` in Visual Studio running the project on a real device. If you want to run the project for iOS ensure to setup your apple-ID in Visual Studio.
+
+## Optional - build using custom _Flutnet.Interop.*_ libs
+
+In case you want to use your custom **Flutnet.Interop.Android/iOS** libraries, you can build your own packages following the instruction from the [Flutnet Xamarin Bindings Libraries](https://github.com/flutnet/flutnet_xamarin-bindings) repository.
+
+After that just edit the `samples/NuGet.Config`  file (specifying the corresponding packages PATH) and follow the [Build procedure](#build-procedure-hammer) provided in this documentß.
+
 
 ## Contributing
 
