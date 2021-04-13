@@ -4,7 +4,7 @@
 
 This repository provides all the code to build your own nuget packages [Flutnet.iOS](https://www.nuget.org/packages/Flutnet.iOS/) and [Flutnet.Android](https://www.nuget.org/packages/Flutnet.Android/). 
 
-This packages contains both the [FlutnetRuntime](https://www.flutnet.com/Documentation/Reference/Flutnet-Runtime) and the [FlutnetBrigde](https://www.flutnet.com/Documentation/Reference/Flutnet-Bridge) used to provide the communication between the Flutter and Xamarin for your Flutnet Project.
+This packages contains both the [FlutnetRuntime](https://www.flutnet.com/Documentation/Reference/Flutnet-Runtime) and the [FlutnetBrigde](https://www.flutnet.com/Documentation/Reference/Flutnet-Bridge) used to provide the communication between Flutter and Xamarin in your Xamarin Project (see the [Flutnet Architecture](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture)).
 
 ## What is Flutnet?
 
@@ -14,7 +14,7 @@ Flutnet is a set of tools and libraries that will make super easy embed Flutter 
 
 In order to build these packages you need to have already builded the [Flutnet Xamarin Bindings Libraries](https://github.com/flutnet/flutnet_xamarin-bindings).
 
-## Build procedure
+## Build procedure :hammer:
 
 >The following procedure refer to a **macOS system**, because we need a macOS machine in order to build both Android and iOS.
 
