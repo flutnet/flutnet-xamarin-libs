@@ -4,14 +4,13 @@
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | [![Nuget](https://img.shields.io/nuget/v/Flutnet.Android)](https://www.nuget.org/packages/Flutnet.Android/) | [![Nuget](https://img.shields.io/nuget/v/Flutnet.iOS)](https://www.nuget.org/packages/Flutnet.iOS/) |
 
+This repository holds the class libraries that allow the communication between Flutter and Xamarin inside a Xamarin.Android or Xamarin.iOS project. The main components for initializing and managing this communication layer are the [FlutnetRuntime](https://www.flutnet.com/Documentation/Reference/Flutnet-Runtime) and the [FlutnetBrigde](https://www.flutnet.com/Documentation/Reference/Flutnet-Bridge) classes. For more information on the overall architecture please read through the [Flutnet documentation](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture).
 
-This repository provides all the code to build your own nuget packages [Flutnet.iOS](https://www.nuget.org/packages/Flutnet.iOS/) and [Flutnet.Android](https://www.nuget.org/packages/Flutnet.Android/). 
-
-This packages contains both the [FlutnetRuntime](https://www.flutnet.com/Documentation/Reference/Flutnet-Runtime) and the [FlutnetBrigde](https://www.flutnet.com/Documentation/Reference/Flutnet-Bridge) used to provide the communication between Flutter and Xamarin in your Xamarin Project (see the [Flutnet Architecture](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture)).
+These libraries are published on [NuGet Gallery](https://www.nuget.org/) with the names [Flutnet.Android](https://www.nuget.org/packages/Flutnet.Android/) and [Flutnet.iOS](https://www.nuget.org/packages/Flutnet.iOS/).
 
 ## What is Flutnet?
 
-Flutnet is a set of tools and libraries that will make super easy embed [Flutter](https://flutter.dev/) (graphical framework) inside a [Xamarin](https://dotnet.microsoft.com/apps/xamarin) application (as a backend layer) to obtain a powerful and native cross platform application. For more detailts see https://www.flutnet.com/.
+Flutnet is a set of tools and libraries that allow you to create rich and beautiful Xamarin apps using [Flutter](https://flutter.dev/) as UI Layer and .NET as backend. For more details please visit https://www.flutnet.com/.
 
 <div style="background-color:white; padding:0%; margin-bottom: 3%;">
 <img src="github_assets/how_flutnet_works_r2.png" width="35%" style="background-color:white; padding:1.2%;" />
