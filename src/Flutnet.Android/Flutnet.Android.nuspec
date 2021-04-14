@@ -27,8 +27,8 @@
     <file src="bin/Release/Flutnet.dll" target="lib/MonoAndroid/Flutnet.dll" />
     <file src="bin/Release/Flutnet.xml" target="lib/MonoAndroid/Flutnet.xml" />
     <file src="bin/Release/websocket-sharp.dll" target="lib/MonoAndroid/websocket-sharp.dll" />
-    <file src="../../LICENSE.LGPL3.md" target="LICENSE.LGPL3.md" />
-    <file src="../../LICENSE.GPL3.md" target="LICENSE.GPL3.md" />
+    <file src="../../LICENSE.LGPL3" target="LICENSE.LGPL3" />
+    <file src="../../LICENSE.GPL3" target="LICENSE.GPL3" />
     <file src="../../NOTICE.md" target="NOTICE.md" />
     <file src="../../assets/images/flutnet_logo_128x128_trasp.png" target="images/icon.png" />
   </files>
