@@ -72,7 +72,7 @@ You can alwais open the `samples/Flutnet.Samples.sln` in Visual Studio running t
 
 In case you want to use your custom **Flutnet.Interop.Android/iOS** libraries, you can build your own packages following the instruction from the [Flutnet Xamarin Bindings Libraries](https://github.com/flutnet/flutnet_xamarin-bindings) repository.
 
-After that just edit the `samples/NuGet.Config`  file (specifying the corresponding packages PATH) and follow the [Build procedure](#build-procedure-hammer) provided in this documentß.
+After that just edit both `NuGet.Config` and `samples/NuGet.Config`  files (uncomment the `<add .. />`) section and follow the [Build procedure](#build-procedure-hammer) provided in this document.
 
 
 ## Contributing
