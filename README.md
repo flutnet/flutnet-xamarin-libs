@@ -22,18 +22,9 @@ Flutnet is a set of tools and libraries that allows you to create rich and beaut
 The following procedure refer to a **macOS system**, because we need a macOS machine in order to build both Android and iOS.
 
 The build process is composed by:
- - [Restore all NuGet Packages](#restore-all-nuget-packages)
  - [Build the source projects](#build-the-source-projects)
  - [Create Nuget packages](#create-nuget-packages)
  - [Build the Sample](#build-the-sample)
-
-### Restore NuGet Packages
-
-To ensure that all required nuget packages (for the projects) will be restored run the command
-
-```sh
-scripts/restore-nuget-packages.sh
-```
 
 ### Build the source projects
 
@@ -69,6 +60,7 @@ Run
 ```sh
 scripts/build-samples.sh
 ```
+>Visual studio build tool know where to find the nuget packages because the information is indicated inside the `samples/NuGet.Config` file.
 
 At the first time, the build process will require more time because needs to build the Flutter Module used inside the Xamarin app. Check the [Flutnet Architecture](https://www.flutnet.com/Documentation/Introduction/Flutnet-Architecture) for more details.
 
