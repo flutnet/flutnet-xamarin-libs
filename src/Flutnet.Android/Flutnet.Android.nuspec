@@ -7,7 +7,7 @@
     <authors>Novagem Solutions S.r.l.</authors>
     <owners></owners>
     <projectUrl>https://www.flutnet.com</projectUrl>
-    <repository type="git" url="https://github.com/flutnet/flutnet_xamarin-libs" />
+    <repository type="git" url="https://github.com/flutnet/flutnet-xamarin-libs" />
     <license type="expression">LGPL-3.0-or-later</license>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Flutnet runtime for Xamarin.Android</description>
